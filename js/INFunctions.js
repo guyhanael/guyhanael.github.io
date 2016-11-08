@@ -1,4 +1,4 @@
-var navList = ["about", "gallery", "contactUs", "cusSrevise"];
+var navList = ["about", "contactUs", "cusSrevise"];
 $(document).on('click', ".nav li", function() {
 	$.each(navList, function(index, val) {
 		$('.col-md-8 section').hide();
@@ -12,11 +12,11 @@ $(document).on('click', ".nav li", function() {
 	if ($(window).width() < 600) {
 		$('.navbar-toggle').trigger('click');
 	}
-	if (me == "gallery") {
-		$('.decoratedImage').hide()
-	} else {
+	//if (me == "gallery") {
+	//	$('.decoratedImage').hide()
+	//} else {
 		$('.decoratedImage').show()
-	}
+	//}
 });
 $(document).ready(function() {
 	if ($(window).width() < 600) {
